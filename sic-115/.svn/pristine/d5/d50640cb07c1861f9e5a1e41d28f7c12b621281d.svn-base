@@ -1,0 +1,33 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package contGeneral;
+
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import otros.conexionBD;
+
+/**
+ *
+ * @author Zoila Villatoro
+ */
+public class CuentaConsultas {
+    conexionBD conexionCuentas= new conexionBD();
+    Cuenta cuenta= new Cuenta();
+    
+     public void guardar(String codigo, String nombre, String especificacion) {
+         cuenta.setCodigo(Integer.parseInt(codigo));
+         cuenta.setNombre(nombre);
+         String sql = "INSERT INTO cuenta(idcuenta,nombre) VALUES (?,?);";
+        try {
+            PreparedStatement declaracion = conexionCuentas.getConexion().prepareStatement(sql);
+            declaracion.setInt(1,cuenta.getCodigo());
+            declaracion.setString(2,cuenta.getNombre());
+            declaracion.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}
