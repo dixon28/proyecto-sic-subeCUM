@@ -11,7 +11,7 @@ package contGeneral;
  */
 public class Orden {
     private int idOrden;
-    private float sueldo_por_hora;
+    private Double sueldo_por_hora;
     private int numero_horas;
     private String descripcion;
     private Double costos_indirectos;
@@ -44,11 +44,11 @@ public class Orden {
         this.idPan = idPan;
     }
 
-    public float getSueldo_por_hora() {
+    public double getSueldo_por_hora() {
         return sueldo_por_hora;
     }
 
-    public void setSueldo_por_hora(float sueldo_por_hora) {
+    public void setSueldo_por_hora(double sueldo_por_hora) {
         this.sueldo_por_hora = sueldo_por_hora;
     }
 

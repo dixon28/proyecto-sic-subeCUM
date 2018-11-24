@@ -16,7 +16,7 @@ import javax.swing.table.AbstractTableModel;
 public class TModeloKardex extends AbstractTableModel{
     
     
-  public  ArrayList<kardexAux> listaRegK= new ArrayList< kardexAux>();
+  public  ArrayList<kardexAux> listaRegK= new ArrayList<kardexAux>();
 
     @Override
     public int getRowCount() {
@@ -37,36 +37,28 @@ return listaRegK.size();
  Object valor = null;
  switch(columnIndex){
  case 0: valor =registro.getFecha();
- break;
+    break;
  case 1: valor = registro.getCantE();
- 
- break;
+    break;
  case 2: valor= registro.getCuE();
-break;
+    break;
  case 3: valor= registro.getCtE();
-break;
-        case 4: valor=registro.getCantS();
-                break;
-        case 5: valor= registro.getCuS();
-                break;
-        case 6: valor=registro.getCtS();
-                break;
-        case 7: valor=registro.getCantSaldo();
-                break;
-        case 8: valor=registro.getCuSaldo();
-                break;
-        case 9: valor= registro.getCtSaldo();
-                
-                
-                break;
-           
- }
-        
-        
-        return valor;
-
- 
-    }
+    break;
+ case 4: valor=registro.getCantS();
+    break;
+ case 5: valor= registro.getCuS();
+    break;
+ case 6: valor=registro.getCtS();
+    break;
+ case 7: valor=registro.getCantSaldo();
+    break;
+ case 8: valor=registro.getCuSaldo();
+    break;
+ case 9: valor= registro.getCtSaldo();
+    break;       
+ } 
+ return valor;
+}
     
     
     

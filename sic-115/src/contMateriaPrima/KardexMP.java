@@ -233,18 +233,16 @@ public class KardexMP extends javax.swing.JFrame {
             PreparedStatement sentenciaRegistros = this.conect.getConexion().prepareStatement(sqlRegistros);
             sentenciaRegistros.setString(1, string);
             ResultSet resultado1 = sentenciaRegistros.executeQuery();
-
+            
             while (resultado1.next()) {
 
-                kardexAux karAux = new kardexAux();
+                   kardexAux karAux = new kardexAux();
                 if (resultado1.getBoolean("entrada"))//analisis entrada
-                {
-
-                    String extraccion1 = "select *from entradas where idtipomat=? and fecha_entrada=?";
+                { 
+                    String extraccion1 = "select * from entradas where idtipomat=? and fecha_entrada=?";
                     PreparedStatement sentenciaE = this.conect.getConexion().prepareStatement(extraccion1);
                     sentenciaE.setInt(1, resultado1.getInt("idtipomat"));
                     sentenciaE.setDate(2, resultado1.getDate("fecha_entrada"));
-
                     ResultSet resultado2 = sentenciaE.executeQuery();
                     resultado2.next();
                     karAux.setFecha(resultado1.getDate("fecha_entrada"));
@@ -254,9 +252,8 @@ public class KardexMP extends javax.swing.JFrame {
                     karAux.setCantSaldo(resultado1.getInt("cantidad_mat"));
                     karAux.setCuSaldo(resultado1.getDouble("costouni_mat"));
                     karAux.setCtSaldo(resultado1.getDouble("costototal"));
-
+                    System.out.println(resultado2.getInt("cantidad_entrada"));
                     this.modelo.listaRegK.add(karAux);
-
                 } else {
                     /*
                      karAux.setFecha(resultado1.getDate("fecha_entrada"));
@@ -282,11 +279,10 @@ public class KardexMP extends javax.swing.JFrame {
                      karAux.setCtSaldo(resultado1.getDouble("costototal"));
                      */
                     this.modelo.listaRegK.add(karAux);
-
                 }
 
                 modelo.fireTableDataChanged();
-
+                
             }
 
         } catch (SQLException ex) {

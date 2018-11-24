@@ -25,8 +25,8 @@ public class allFrames {
     public static void aplicarTema(JFrame j) {
         try {
             String s = "";
-            s = "com.jtattoo.plaf.hifi.HiFiLookAndFeel";
-            s = "com.jtattoo.plaf.aluminium.AluminiumLookAndFeel";
+            s = "com.jtattoo.plaf.acryl.AcrylLookAndFeel";
+//            s = "com.jtattoo.plaf.aluminium.AluminiumLookAndFeel";
             javax.swing.UIManager.setLookAndFeel(s);
             SwingUtilities.updateComponentTreeUI(j);
         } catch (ClassNotFoundException ex) {
@@ -45,8 +45,8 @@ public class allFrames {
 
         try {
             String s = "";
-            s = "com.jtattoo.plaf.hifi.HiFiLookAndFeel";
-            s = "com.jtattoo.plaf.aluminium.AluminiumLookAndFeel";
+            s = "com.jtattoo.plaf.acryl.AcrylLookAndFeel";
+            //s = "com.jtattoo.plaf.aluminium.AluminiumLookAndFeel";
             javax.swing.UIManager.setLookAndFeel(s);
             SwingUtilities.updateComponentTreeUI(j);
         } catch (ClassNotFoundException ex) {

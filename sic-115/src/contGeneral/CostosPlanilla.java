@@ -49,7 +49,7 @@ public class CostosPlanilla {
     public void guardarOrden(String idOrden, String pan, String sueldo_por_hora, String numero_hora, String descripcion, long fecha_creacion, long fecha_entrega) {
         orden.setIdOrden(Integer.parseInt(idOrden));
         orden.setIdPan(Integer.parseInt(pan));
-        orden.setSueldo_por_hora(Float.parseFloat(formateador.format(sueldo_por_hora)));
+        orden.setSueldo_por_hora(Double.parseDouble(sueldo_por_hora));
         orden.setNumero_horas(Integer.parseInt(numero_hora));
         orden.setDescripcion(descripcion);
         Double porcentajeIngreso = Double.parseDouble(formateador.format(RecuperacionCIF()));
@@ -59,7 +59,7 @@ public class CostosPlanilla {
         try {
             PreparedStatement declaracion = conexionCuentas.getConexion().prepareStatement(sql);
             declaracion.setInt(1, orden.getIdOrden());
-            declaracion.setFloat(2, orden.getSueldo_por_hora());
+            declaracion.setDouble(2, orden.getSueldo_por_hora());
             declaracion.setInt(3, orden.getNumero_horas());
             declaracion.setString(4, orden.getDescripcion());
             declaracion.setDate(5, fechaenviar);

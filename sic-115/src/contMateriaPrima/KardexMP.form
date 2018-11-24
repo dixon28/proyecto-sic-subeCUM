@@ -95,6 +95,9 @@
               <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="KardexMP_jTable1"/>
+          </AuxValues>
         </Component>
       </SubComponents>
     </Container>

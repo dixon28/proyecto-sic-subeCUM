@@ -33,7 +33,7 @@ if(conexion==null)
     {
         try {
     
- conexion = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres","admin");
+ conexion = DriverManager.getConnection("jdbc:postgresql://localhost:5432/panesal", "postgres","admin");
 
  } catch (SQLException ex) {
  Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
