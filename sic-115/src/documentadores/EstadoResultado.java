@@ -62,7 +62,7 @@ public class EstadoResultado {
         //AGREGAR LA IMAGEN 
         try
         {
-                Image foto = Image.getInstance("pingu.png");
+                Image foto = Image.getInstance("logo.png");
                 foto.scaleToFit(150, 150);
                 foto.setAlignment(Chunk.ALIGN_MIDDLE);
                 documento.add(foto);

@@ -100,7 +100,7 @@ public class ManejoProducto extends javax.swing.JFrame {
 
         jLabel1.setText("Numero de Orden:");
 
-        jLabel2.setText("Tipo de Pan:");
+        jLabel2.setText("Tipo de Producto:");
 
         jLabel3.setText("Costos de Materia Prima:");
 
@@ -383,7 +383,7 @@ private void inicializarColumnas() {
                     col.setHeaderValue("Numero de Orden");
                     break;
                 case 1:
-                    col.setHeaderValue("Tipo de Pan");
+                    col.setHeaderValue("Tipo de Producto");
                     break;
                 case 2:
                     col.setHeaderValue("Costos de Materia Prima");

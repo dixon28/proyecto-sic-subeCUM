@@ -43,7 +43,7 @@ public class consultaTransaccion extends javax.swing.JFrame {
         inicializarColumnas();
         llenarCB();
         this.setLocationRelativeTo(null);
-        this.setTitle("Consulta transaccion");
+        this.setTitle("Consultar Transacción");
         this.setResizable(false);
         //btnconsulta.setVisible(false);
 
@@ -59,23 +59,25 @@ public class consultaTransaccion extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        comboBoxLibros = new javax.swing.JComboBox<String>();
+        comboBoxLibros = new javax.swing.JComboBox<>();
         btnCargarLibro = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaTransaccion = new javax.swing.JTable();
         btnconsulta = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setText("Periodo contable:");
 
-        comboBoxLibros.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        comboBoxLibros.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         comboBoxLibros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboBoxLibrosActionPerformed(evt);
             }
         });
 
+        btnCargarLibro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/database_upload.png"))); // NOI18N
         btnCargarLibro.setText("Cargar");
         btnCargarLibro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,12 +88,17 @@ public class consultaTransaccion extends javax.swing.JFrame {
         tablaTransaccion.setModel(modelConsultar);
         jScrollPane1.setViewportView(tablaTransaccion);
 
-        btnconsulta.setText("Consulta transaccion");
+        btnconsulta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/search_page.png"))); // NOI18N
+        btnconsulta.setText("Ver Detalle");
         btnconsulta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnconsultaActionPerformed(evt);
             }
         });
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/book_search.png"))); // NOI18N
+        jLabel2.setText("Consultar Transacción");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -99,36 +106,40 @@ public class consultaTransaccion extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(comboBoxLibros, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnCargarLibro))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                            .addGap(26, 26, 26)
+                            .addComponent(jLabel1)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(comboBoxLibros, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 497, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 497, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 16, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(198, 198, 198)
-                .addComponent(btnconsulta)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnCargarLibro, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnconsulta))
+                            .addComponent(jLabel2))))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(34, 34, 34)
+                .addComponent(jLabel2)
+                .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(comboBoxLibros, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCargarLibro))
-                .addGap(36, 36, 36)
+                    .addComponent(comboBoxLibros, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(43, 43, 43)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
-                .addComponent(btnconsulta)
-                .addGap(34, 34, 34))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnCargarLibro, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnconsulta, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
 
         pack();
@@ -156,7 +167,7 @@ public class consultaTransaccion extends javax.swing.JFrame {
             mostrar.setVisible(true);
 
         } else {
-            JOptionPane.showMessageDialog(this, "No ha seleccionado ninguna transaccion para mostrar");
+            JOptionPane.showMessageDialog(this, "No ha seleccionado ninguna transacción para mostrar");
         }
 
 
@@ -203,6 +214,7 @@ public class consultaTransaccion extends javax.swing.JFrame {
     private javax.swing.JButton btnconsulta;
     private javax.swing.JComboBox<String> comboBoxLibros;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tablaTransaccion;
     // End of variables declaration//GEN-END:variables
@@ -213,7 +225,7 @@ public class consultaTransaccion extends javax.swing.JFrame {
             TableColumn col = new TableColumn(i);
             switch (i) {
                 case 0:
-                    col.setHeaderValue("Codigo transaccion");
+                    col.setHeaderValue("Codigo");
                     break;
                 case 1:
                     col.setHeaderValue("Fecha");

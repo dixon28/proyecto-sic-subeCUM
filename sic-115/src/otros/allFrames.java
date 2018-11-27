@@ -63,12 +63,12 @@ public class allFrames {
 
     public void CargarIcono(JFrame j) {
 
-        j.setIconImage(new ImageIcon(getClass().getResource("/imagenes/panesal.png")).getImage().getScaledInstance(80, 80, 200));
+        j.setIconImage(new ImageIcon(getClass().getResource("/imagenes/logo.png")).getImage().getScaledInstance(80, 80, 200));
 
     }
  public void CargarIcono(javax.swing.JDialog j) {
 
-        j.setIconImage(new ImageIcon(getClass().getResource("/imagenes/panesal.png")).getImage().getScaledInstance(80, 80, 200));
+        j.setIconImage(new ImageIcon(getClass().getResource("/imagenes/logo.png")).getImage().getScaledInstance(80, 80, 200));
 
     }
 

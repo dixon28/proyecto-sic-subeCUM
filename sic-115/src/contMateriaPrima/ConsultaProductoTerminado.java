@@ -137,7 +137,7 @@ public class ConsultaProductoTerminado extends javax.swing.JFrame {
                     col.setHeaderValue("Numero de Orden");
                     break;
                 case 1:
-                    col.setHeaderValue("Tipo de Pan");
+                    col.setHeaderValue("Tipo de Producto");
                     break;
                 case 2:
                     col.setHeaderValue("Cantidad");
