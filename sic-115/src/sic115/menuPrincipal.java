@@ -33,7 +33,7 @@ public class menuPrincipal extends javax.swing.JFrame {
         allFrames.aplicarTema(this);
         new allFrames().CargarIcono(this);
         this.setLocationRelativeTo(null);
-        this.setTitle("Menú");
+        this.setTitle("Menú Principal");
         this.setResizable(false);
         regisUser.setVisible(false);
     }
@@ -74,6 +74,7 @@ public class menuPrincipal extends javax.swing.JFrame {
         label1.setText("label1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Menú Principal");
         setPreferredSize(new java.awt.Dimension(400, 550));
         setResizable(false);
 

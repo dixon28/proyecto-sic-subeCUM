@@ -36,7 +36,7 @@ public class iniciar extends javax.swing.JDialog {
         this.setResizable(false);
         new allFrames().CargarIcono(this);
         this.setLocationRelativeTo(null);
-        this.setTitle("Iniciar sesion");
+        this.setTitle("Iniciar Sesión");
 
     }
 

@@ -46,7 +46,7 @@ public class generarEstados extends javax.swing.JFrame {
         new allFrames().CargarIcono(this);
         llenarCB();
         this.setLocationRelativeTo(null);
-        this.setTitle("Generar Documentos");
+        this.setTitle("Generar Estados Financieros");
         this.setResizable(false);
         this.btnGBalanceComprobacion.setEnabled(false);
         btnGBalanceGen.setEnabled(false);

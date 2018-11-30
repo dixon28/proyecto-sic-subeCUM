@@ -30,7 +30,7 @@ public class ReferenteOrden extends javax.swing.JFrame {
         allFrames.aplicarTema(this);
         new allFrames().CargarIcono(this);
         this.setLocationRelativeTo(null);
-        this.setTitle("Menu Principal para Manejo de Ordenes");
+        this.setTitle("Ordenes de Fabricación y Producto Terminado");
         this.setResizable(false);
     }
 
@@ -61,6 +61,7 @@ public class ReferenteOrden extends javax.swing.JFrame {
         AsignacionMateriaPrima.setMinimumSize(new java.awt.Dimension(145, 23));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("ORDEN DE FABRICACIÓN Y P.T.");
 
         AsignacionManoDeObra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/businesswoman_man.png"))); // NOI18N
         AsignacionManoDeObra.setText("Asignación de Mano de Obra");

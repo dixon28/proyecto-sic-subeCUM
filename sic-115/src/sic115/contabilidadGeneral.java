@@ -32,7 +32,7 @@ public class contabilidadGeneral extends javax.swing.JFrame {
         allFrames.aplicarTema(this);
         new allFrames().CargarIcono(this);
         this.setLocationRelativeTo(null);
-        this.setTitle("Menu principal contabilidad general");
+        this.setTitle("Contabilidad General");
         this.setResizable(false);
     }
 

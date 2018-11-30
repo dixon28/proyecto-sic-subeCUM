@@ -28,7 +28,7 @@ public class CIF extends javax.swing.JFrame {
         allFrames.aplicarTema(this);
         new allFrames().CargarIcono(this);
         this.setLocationRelativeTo(null);
-        this.setTitle("Menu para cambiar los Costos Indirectos de Fabricacion");
+        this.setTitle("Costos Indirectos de Fabricacion");
         this.setResizable(false);
 
     }

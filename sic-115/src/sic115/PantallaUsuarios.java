@@ -25,7 +25,7 @@ public class PantallaUsuarios extends javax.swing.JFrame {
         allFrames.aplicarTema(this);
         new allFrames().CargarIcono(this);
         this.setLocationRelativeTo(null);
-        this.setTitle("Menu de Agregar Usuarios");
+        this.setTitle("Registro de Usuarios");
         this.setResizable(false);
     }
 

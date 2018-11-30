@@ -55,7 +55,7 @@ public class Asignacion_MP extends javax.swing.JFrame {
         inicializarColumnas();
         refrescarTabla();
         this.setLocationRelativeTo(null);
-        this.setTitle("Menu Principal para Asignacion de Materia Prima");
+        this.setTitle("Asignación de Materia Prima");
         this.setResizable(false);
     }
 

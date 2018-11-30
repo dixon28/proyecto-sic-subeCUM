@@ -39,7 +39,7 @@ public class Asignacion_Orden extends javax.swing.JFrame {
         inicializarColumnas();
         refrescarTabla();
         this.setLocationRelativeTo(null);
-        this.setTitle("Menu Principal para Asignación de Empleados a Cada Orden");
+        this.setTitle("Asignación de Mano de Obra");
         this.setResizable(false);
 
     }

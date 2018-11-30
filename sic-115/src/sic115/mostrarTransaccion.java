@@ -34,7 +34,7 @@ public class mostrarTransaccion extends javax.swing.JFrame {
         allFrames.aplicarTema(this);
         new allFrames().CargarIcono(this);
         this.setLocationRelativeTo(null);
-        this.setTitle("Mostrar Transaccion");
+        this.setTitle("Detalle de Transacción");
         this.setResizable(false);
     }
 

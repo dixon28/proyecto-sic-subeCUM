@@ -44,7 +44,7 @@ public class finalIniPeriodo extends javax.swing.JFrame {
         llenarCombo();
         this.setLocationRelativeTo(null);
 
-        this.setTitle("Finalizar/iniciar periodo");
+        this.setTitle("Periodo Contable");
         this.setResizable(false);
     }
 
@@ -64,7 +64,9 @@ public class finalIniPeriodo extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        label.setText("Escoja periodo a cerrar");
+        label.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        label.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/calendar.png"))); // NOI18N
+        label.setText("Periodo Contable");
 
         comboActivos.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -92,13 +94,13 @@ public class finalIniPeriodo extends javax.swing.JFrame {
                         .addGap(130, 130, 130)
                         .addComponent(label))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(60, 60, 60)
-                        .addComponent(comboActivos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(91, 91, 91)
-                        .addComponent(Cerrar)
-                        .addGap(18, 18, 18)
-                        .addComponent(crear)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(comboActivos, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(Cerrar)
+                                .addGap(18, 18, 18)
+                                .addComponent(crear)))))
                 .addContainerGap(67, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -106,13 +108,13 @@ public class finalIniPeriodo extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addComponent(label)
-                .addGap(35, 35, 35)
+                .addGap(32, 32, 32)
                 .addComponent(comboActivos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39)
+                .addGap(42, 42, 42)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Cerrar)
                     .addComponent(crear))
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         pack();

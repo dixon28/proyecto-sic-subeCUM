@@ -35,7 +35,7 @@ public class IngresaOrden extends javax.swing.JFrame {
         FillcomboPan();
         this.setLocationRelativeTo(null);
         new allFrames().CargarIcono(this);
-        this.setTitle("Menu Principal para Creación de Orden");
+        this.setTitle("Nueva Orden de Fabricación");
         this.setResizable(false);
     }
 

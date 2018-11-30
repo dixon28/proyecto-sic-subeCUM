@@ -50,7 +50,7 @@ public class ingTransacciones extends javax.swing.JFrame {
         llenarCombo();
         inicializarColumnas();
         this.setLocationRelativeTo(null);
-        this.setTitle("Ingresar transacciones");
+        this.setTitle("Ingresar Transacción");
         this.setResizable(false);
         this.btnEnviar.setEnabled(false);
         this.periodo.setText("Periodo contable:" + libroactual.getFechainicio() + " hasta " + libroactual.getFechafin());

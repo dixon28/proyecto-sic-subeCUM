@@ -24,7 +24,7 @@ public class crearSubcuenta extends javax.swing.JDialog {
         new allFrames().CargarIcono(this);
         Fillcombo2();
         this.setLocationRelativeTo(null);
-        this.setTitle("Nueva subcuenta");
+        this.setTitle("Nueva Subcuenta");
         this.setResizable(false);
     }
 

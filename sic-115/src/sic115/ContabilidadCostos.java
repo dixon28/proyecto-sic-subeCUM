@@ -27,7 +27,7 @@ public class ContabilidadCostos extends javax.swing.JFrame {
         allFrames.aplicarTema(this);
         new allFrames().CargarIcono(this);
         this.setLocationRelativeTo(null);
-        this.setTitle("Menu Principal para Contabilidad de Costos");
+        this.setTitle("Contabilidad de Costos");
         this.setResizable(false);
     }
 
@@ -48,6 +48,7 @@ public class ContabilidadCostos extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("CONTABILIDAD DE COSTOS");
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/dollar_currency_sign.png"))); // NOI18N
