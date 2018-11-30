@@ -118,7 +118,7 @@ public class BalanceGeneral {
                float saldopasivo=0;
                 String sqlsaldopyc="SELECT SUM(debe_cuenta-haber_cuenta)\n" +
                                     "FROM public.cuenta \n" +
-                                    "where cast(idcuenta AS text) SIMILAR TO  '2%' or cast(idcuenta AS text) SIMILAR TO  '3%';";
+                                    "where cast(idcuenta AS text) SIMILAR TO  '2%' or cast(idcuenta AS text) SIMILAR TO  '30301';";
                declaracion0= conexionCuentas.getConexion().prepareStatement(sqlsaldopyc);
                res= declaracion0.executeQuery();
                res.next();
@@ -163,7 +163,7 @@ public class BalanceGeneral {
                 
                 String sqlGeneral2="SELECT idcuenta,nombrecuenta, debe_cuenta, haber_cuenta\n" + //BISCANDO PASIVO Y CAPITAL
                 "  FROM public.cuenta\n" +
-                "  where (cast(idcuenta AS text) SIMILAR TO  '2%' or cast(idcuenta AS text) SIMILAR TO  '3%') and not (debe_cuenta=0 and haber_cuenta=0) order by idcuenta;"; //OBTENGO CUENTAS PASIVAS Y CAPITAL
+                "  where (cast(idcuenta AS text) SIMILAR TO  '2%' or cast(idcuenta AS text) SIMILAR TO  '30301') and not (debe_cuenta=0 and haber_cuenta=0) order by idcuenta;"; //OBTENGO CUENTAS PASIVAS Y CAPITAL
                 
                 declaracion1= conexionCuentas.getConexion().prepareStatement(sqlGeneral);
                 declaracion2= conexionCuentas.getConexion().prepareStatement(sqlGeneral2);

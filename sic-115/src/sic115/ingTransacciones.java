@@ -88,6 +88,12 @@ public class ingTransacciones extends javax.swing.JFrame {
 
         jLabel1.setText("Transacción");
 
+        txtTransaccion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTransaccionActionPerformed(evt);
+            }
+        });
+
         comboSub.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         comboSub.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -406,6 +412,10 @@ public class ingTransacciones extends javax.swing.JFrame {
 
 
     }//GEN-LAST:event_btnEnviarActionPerformed
+
+    private void txtTransaccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTransaccionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTransaccionActionPerformed
 
     /**
      * @param args the command line arguments

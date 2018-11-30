@@ -139,14 +139,14 @@ public class EstadoResultado {
                 float utilidadBruta=0; float utilidadDeOperacion=0;  float utilidadAntDeImpuestos=0;
                 float utilidadNeta=0; 
                 String sqltemporal="SELECT haber_cuenta\n" +
-                                    "FROM public.cuenta WHERE idcuenta=5101;"; 
+                                    "FROM public.cuenta WHERE idcuenta=50501;"; 
                 declaracion1= conexionCuentas.getConexion().prepareStatement(sqltemporal);
                 resultado1= declaracion1.executeQuery();
                 resultado1.next();
                 ventasNetas=resultado1.getFloat(1);
                 
                 resultado1=null;
-                sqltemporal="SELECT debe_cuenta FROM public.cuenta WHERE idcuenta=4103;";
+                sqltemporal="SELECT debe_cuenta FROM public.cuenta WHERE idcuenta=60601;";
                 declaracion1= conexionCuentas.getConexion().prepareStatement(sqltemporal);
                 resultado1= declaracion1.executeQuery();
                 resultado1.next();
@@ -156,7 +156,7 @@ public class EstadoResultado {
                 
                    
                 sqltemporal="SELECT debe_cuenta\n" +
-                            "FROM public.cuenta WHERE idcuenta=4110;";
+                            "FROM public.cuenta WHERE idcuenta=40406;";
                 declaracion1= conexionCuentas.getConexion().prepareStatement(sqltemporal);
                 resultado1= declaracion1.executeQuery();
                 resultado1.next();
@@ -165,7 +165,7 @@ public class EstadoResultado {
                
                  sqltemporal="SELECT SUM(debe_cuenta)\n" +
                             "  FROM public.cuenta\n" +
-                            "  WHERE idcuenta=4107 OR idcuenta=4108 OR idcuenta=4109;";
+                            "  WHERE idcuenta=40404 OR idcuenta=40405 OR idcuenta=40407;";
                 declaracion1= conexionCuentas.getConexion().prepareStatement(sqltemporal);
                 resultado1= declaracion1.executeQuery();
                 resultado1.next();
@@ -176,7 +176,7 @@ public class EstadoResultado {
                 utilidadDeOperacion=utilidadBruta-gastosDeOperacion;
                 utilidadAntDeImpuestos=utilidadDeOperacion-gastosFinancieros;
                 
-                PreparedStatement enviarRenta= conexionCuentas.getConexion().prepareStatement("update cuenta set haber_cuenta=haber_cuenta+? where idcuenta=1101");
+                PreparedStatement enviarRenta= conexionCuentas.getConexion().prepareStatement("update cuenta set haber_cuenta=haber_cuenta+? where idcuenta=10101");
                 float renta=0;
                 if(utilidadAntDeImpuestos<100000 && utilidadAntDeImpuestos>0){
                 
@@ -197,7 +197,7 @@ public class EstadoResultado {
                 
                 resultado1=null;
                
-                sqltemporal="SELECT haber_cuenta  FROM public.cuenta where idcuenta=3201;"; //obtener la utilidad 
+                sqltemporal="SELECT haber_cuenta  FROM public.cuenta where idcuenta=30304;"; //obtener la utilidad 
                 declaracion1= conexionCuentas.getConexion().prepareStatement(sqltemporal);
                 resultado1= declaracion1.executeQuery();
                 resultado1.next();
@@ -205,7 +205,7 @@ public class EstadoResultado {
                 float NuevasUtilidades=UtilidadesNoDist+utilidadneta;
                 
                 if(NuevasUtilidades<0){
-                sqltemporal="UPDATE public.cuenta SET debe_cuenta=debe_cuenta+? WHERE idcuenta=3201;";       //actualizar la utilidad en caso negativo        
+                sqltemporal="UPDATE public.cuenta SET debe_cuenta=debe_cuenta+? WHERE idcuenta=30304;";       //actualizar la utilidad en caso negativo        
                 conexionCuentas.getConexion().prepareStatement(sqltemporal);
                 declaracion1= conexionCuentas.getConexion().prepareCall(sqltemporal);
                 declaracion1.setDouble(1,utilidadneta*-1);
@@ -213,7 +213,7 @@ public class EstadoResultado {
              
                 }
                 else{
-                    sqltemporal="UPDATE public.cuenta SET haber_cuenta=haber_cuenta+? WHERE idcuenta=3201;";       //actualizar la utilidad en caso negativo        
+                    sqltemporal="UPDATE public.cuenta SET haber_cuenta=haber_cuenta+? WHERE idcuenta=30304;";       //actualizar la utilidad en caso negativo        
                 conexionCuentas.getConexion().prepareStatement(sqltemporal);
                 declaracion1= conexionCuentas.getConexion().prepareCall(sqltemporal);
                 declaracion1.setDouble(1,utilidadneta);

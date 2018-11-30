@@ -139,7 +139,7 @@ public class EstadoCapital {
                 float capitalInicial=0; float utilidadoDeficit=0;float gastosNoOperacionales=0;
                 
                 sqltemporal="SELECT SUM(haber_cuenta-debe_cuenta)\n" +
-                                    "FROM public.cuenta WHERE idcuenta=3101;"; 
+                                    "FROM public.cuenta WHERE idcuenta=30301;"; 
                 declaracion1= conexionCuentas.getConexion().prepareStatement(sqltemporal);resultado1= declaracion1.executeQuery();resultado1.next();
                 capitalInicial=resultado1.getFloat(1);
                 
@@ -148,13 +148,13 @@ public class EstadoCapital {
                 
  
                 sqltemporal="SELECT sum(debe_cuenta-haber_cuenta)\n" +
-                            "FROM public.cuenta WHERE idcuenta=4201;";
+                            "FROM public.cuenta WHERE idcuenta=40408;";
                 declaracion1= conexionCuentas.getConexion().prepareStatement(sqltemporal);resultado1= declaracion1.executeQuery();resultado1.next();
                 gastosNoOperacionales=resultado1.getFloat(1);
                 resultado1=null;
                 
                 sqltemporal="SELECT sum(haber_cuenta-debe_cuenta)\n" +
-                            "FROM public.cuenta WHERE idcuenta=3201;";
+                            "FROM public.cuenta WHERE idcuenta=30304;";
                 declaracion1= conexionCuentas.getConexion().prepareStatement(sqltemporal);resultado1= declaracion1.executeQuery();resultado1.next();
                 utilidadoDeficit=resultado1.getFloat(1);
                 resultado1=null;
@@ -166,7 +166,7 @@ public class EstadoCapital {
                 
                //DESCOMENTAR PARA QUE SE REALICE LA UPDATE
                 
-                sqltemporal="UPDATE public.cuenta SET haber_cuenta=? WHERE idcuenta=3101;";       //actualizar la utilidad en caso negativo        
+                sqltemporal="UPDATE public.cuenta SET haber_cuenta=? WHERE idcuenta=30301;";       //actualizar la utilidad en caso negativo        
                 conexionCuentas.getConexion().prepareStatement(sqltemporal);
                 declaracion1= conexionCuentas.getConexion().prepareCall(sqltemporal);
                 declaracion1.setDouble(1,capitalSocialFinal);
