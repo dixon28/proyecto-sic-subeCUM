@@ -24,9 +24,9 @@ public class cierreOrden {
     public void recuperarBagguette() {
 
         try {
-            String sql = "SELECT sum( producto_t.costototal) FROM   public.producto_t where producto_t.tipopan='Baguette';";
-            String sql2 = "Update subcuenta SET debe=debe+? where idsubcuenta=110410";
-            String sql3 = "Update subcuenta  SET haber=haber+? where idsubcuenta=110101";
+            String sql = "SELECT sum( producto_t.costototal) FROM   public.producto_t where producto_t.tipopan='Cunas';";
+            String sql2 = "Update subcuenta SET debe=debe+? where idsubcuenta=1010415";
+            String sql3 = "Update subcuenta  SET haber=haber+? where idsubcuenta=1010102";
             PreparedStatement sentencia = this.conect.getConexion().prepareStatement(sql);
             ResultSet res = sentencia.executeQuery();
 
@@ -50,9 +50,9 @@ public class cierreOrden {
     public void recuperarGalleta() {
 
         try {
-            String sql = "SELECT sum( producto_t.costototal) FROM   public.producto_t where producto_t.tipopan='Galleta Maria';";
-            String sql2 = "Update subcuenta SET debe=debe+? where idsubcuenta=110411";
-            String sql3 = "Update subcuenta  SET haber=haber+? where idsubcuenta=110101";
+            String sql = "SELECT sum( producto_t.costototal) FROM   public.producto_t where producto_t.tipopan='Camas';";
+            String sql2 = "Update subcuenta SET debe=debe+? where idsubcuenta=1010416";
+            String sql3 = "Update subcuenta  SET haber=haber+? where idsubcuenta=1010102";
             PreparedStatement sentencia = this.conect.getConexion().prepareStatement(sql);
             ResultSet res = sentencia.executeQuery();
 

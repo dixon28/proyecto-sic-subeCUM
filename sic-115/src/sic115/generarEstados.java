@@ -124,6 +124,11 @@ public class generarEstados extends javax.swing.JFrame {
         });
 
         comboBoxLibros.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        comboBoxLibros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboBoxLibrosActionPerformed(evt);
+            }
+        });
 
         jLabel6.setText("Periodo Contable:");
 
@@ -309,6 +314,10 @@ public class generarEstados extends javax.swing.JFrame {
             Logger.getLogger(generarEstados.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_btnGBalanceGenActionPerformed
+
+    private void comboBoxLibrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBoxLibrosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboBoxLibrosActionPerformed
 
     /**
      * @param args the command line arguments

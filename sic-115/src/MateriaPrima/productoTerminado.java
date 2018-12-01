@@ -21,9 +21,9 @@ public class productoTerminado {
     public void baguette()
     {
         try {
-            String  sqlExtract="select sum(costototal) as valor from producto_t where tipopan='Baguette';";
-            String slqEnvio1="update subcuenta set debe=debe+? where idsubcuenta='110410'";
-            String slqEnvio2="update subcuenta set haber= haber+? where idsubcuenta='110101'";
+            String  sqlExtract="select sum(costototal) as valor from producto_t where tipopan='Cunas';";
+            String slqEnvio1="update subcuenta set debe=debe+? where idsubcuenta='1010415'";
+            String slqEnvio2="update subcuenta set haber= haber+? where idsubcuenta='1010102'";
             PreparedStatement sentencia= con.getConexion().prepareStatement(sqlExtract);
             
             ResultSet res= sentencia.executeQuery();
@@ -54,9 +54,9 @@ public class productoTerminado {
     {
     
    
-    try {  String  sqlExtract="select sum(costototal) as valor from producto_t where tipopan='Galleta Maria';";
- String slqEnvio1="update subcuenta set debe=debe+? where idsubcuenta='110411'";
- String slqEnvio2="update subcuenta set haber= haber+? where idsubcuenta='110101'";
+    try {  String  sqlExtract="select sum(costototal) as valor from producto_t where tipopan='Camas';";
+ String slqEnvio1="update subcuenta set debe=debe+? where idsubcuenta='1010416'";
+ String slqEnvio2="update subcuenta set haber= haber+? where idsubcuenta='1010102'";
  
         
         

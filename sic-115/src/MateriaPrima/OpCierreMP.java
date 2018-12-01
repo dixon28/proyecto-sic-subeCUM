@@ -32,8 +32,8 @@ ListaLibroDiario list=  new ListaLibroDiario();
    {
    
         try {//110404
-            String sqlenvio="UPDATE subcuenta SET debe=debe+? where idsubcuenta=110404";// inventarios cargados
-            String sqlenvio2="UPDATE subcuenta SET haber=haber+? where idsubcuenta=110101";
+            String sqlenvio="UPDATE subcuenta SET debe=debe+? where idsubcuenta=1010409";// inventarios cargados
+            String sqlenvio2="UPDATE subcuenta SET haber=haber+? where idsubcuenta=1010102";
             String sql="select costototal as costofinal from registro_kardex where id_registro=( select max(id_registro) from registro_kardex where idtipomat=1 and entrada=true);";
             PreparedStatement sentencia=  this.conect.getConexion().prepareStatement(sql);
               PreparedStatement sentenciaenv1=  this.conect.getConexion().prepareStatement(sqlenvio);
@@ -58,8 +58,8 @@ ListaLibroDiario list=  new ListaLibroDiario();
    {
    
         try {//110404
-            String sqlenvio="UPDATE subcuenta SET debe=debe+? where idsubcuenta=110405";// inventarios cargados
-            String sqlenvio2="UPDATE subcuenta SET haber=haber+? where idsubcuenta=110101";
+            String sqlenvio="UPDATE subcuenta SET debe=debe+? where idsubcuenta=1010410";// inventarios cargados
+            String sqlenvio2="UPDATE subcuenta SET haber=haber+? where idsubcuenta=1010102";
             String sql="select costototal as costofinal from registro_kardex where id_registro=( select max(id_registro) from registro_kardex where idtipomat=2 and entrada=true);";
             PreparedStatement sentencia=  this.conect.getConexion().prepareStatement(sql);
               PreparedStatement sentenciaenv1=  this.conect.getConexion().prepareStatement(sqlenvio);
@@ -84,8 +84,8 @@ ListaLibroDiario list=  new ListaLibroDiario();
    {
    
         try {//110404
-            String sqlenvio="UPDATE subcuenta SET debe=debe+? where idsubcuenta=110406";// inventarios cargados
-            String sqlenvio2="UPDATE subcuenta SET haber=haber+? where idsubcuenta=110101";
+            String sqlenvio="UPDATE subcuenta SET debe=debe+? where idsubcuenta=1010411";// inventarios cargados
+            String sqlenvio2="UPDATE subcuenta SET haber=haber+? where idsubcuenta=1010102";
             String sql="select costototal as costofinal from registro_kardex where id_registro=( select max(id_registro) from registro_kardex where idtipomat=3 and entrada=true);";
             PreparedStatement sentencia=  this.conect.getConexion().prepareStatement(sql);
               PreparedStatement sentenciaenv1=  this.conect.getConexion().prepareStatement(sqlenvio);
@@ -109,8 +109,8 @@ ListaLibroDiario list=  new ListaLibroDiario();
    {
    
         try {//110404
-            String sqlenvio="UPDATE subcuenta SET debe=debe+? where idsubcuenta=110407";// inventarios cargados
-            String sqlenvio2="UPDATE subcuenta SET haber=haber+? where idsubcuenta=110101";
+            String sqlenvio="UPDATE subcuenta SET debe=debe+? where idsubcuenta=1010412";// inventarios cargados
+            String sqlenvio2="UPDATE subcuenta SET haber=haber+? where idsubcuenta=1010102";
             String sql="select costototal as costofinal from registro_kardex where id_registro=( select max(id_registro) from registro_kardex where idtipomat=4 and entrada=true);";
             PreparedStatement sentencia=  this.conect.getConexion().prepareStatement(sql);
               PreparedStatement sentenciaenv1=  this.conect.getConexion().prepareStatement(sqlenvio);
@@ -136,8 +136,8 @@ ListaLibroDiario list=  new ListaLibroDiario();
    {
    
         try {//110404
-            String sqlenvio="UPDATE subcuenta SET debe=debe+? where idsubcuenta=110408";// inventarios cargados
-            String sqlenvio2="UPDATE subcuenta SET haber=haber+? where idsubcuenta=110101";
+            String sqlenvio="UPDATE subcuenta SET debe=debe+? where idsubcuenta=1010413";// inventarios cargados
+            String sqlenvio2="UPDATE subcuenta SET haber=haber+? where idsubcuenta=1010102";
             String sql="select costototal as costofinal from registro_kardex where id_registro=( select max(id_registro) from registro_kardex where idtipomat=5 and entrada=true);";
             PreparedStatement sentencia=  this.conect.getConexion().prepareStatement(sql);
               PreparedStatement sentenciaenv1=  this.conect.getConexion().prepareStatement(sqlenvio);
@@ -162,8 +162,8 @@ ListaLibroDiario list=  new ListaLibroDiario();
    {
    
         try {//110404
-            String sqlenvio="UPDATE subcuenta SET debe=debe+? where idsubcuenta=110409";// inventarios cargados
-            String sqlenvio2="UPDATE subcuenta SET haber=haber+? where idsubcuenta=110101";
+            String sqlenvio="UPDATE subcuenta SET debe=debe+? where idsubcuenta=1010414";// inventarios cargados
+            String sqlenvio2="UPDATE subcuenta SET haber=haber+? where idsubcuenta=1010102";
             String sql="select costototal as costofinal from registro_kardex where id_registro=( select max(id_registro) from registro_kardex where idtipomat=6 and entrada=true);";
             PreparedStatement sentencia=  this.conect.getConexion().prepareStatement(sql);
               PreparedStatement sentenciaenv1=  this.conect.getConexion().prepareStatement(sqlenvio);
