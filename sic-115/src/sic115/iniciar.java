@@ -75,7 +75,7 @@ public class iniciar extends javax.swing.JDialog {
             }
         });
 
-        btnIniciarSesion.setText("Iniciar sesion");
+        btnIniciarSesion.setText("Iniciar Sesión");
         btnIniciarSesion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnIniciarSesionActionPerformed(evt);

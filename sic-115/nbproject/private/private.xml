@@ -12,25 +12,7 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/documentadores/BalanceComprobacion.java</file>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/otros/TModeloCuentas.java</file>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/MateriaPrima/listaSalidasKardex.java</file>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/documentadores/EstadoResultado.java</file>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/otros/TModeloLibro.java</file>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/contPlanilla/IngresaOrden.java</file>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/MateriaPrima/productoTerminado.java</file>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/MateriaPrima/KardexMovimientos.java</file>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/otros/TModeloEmpleados.java</file>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/sic115/crearCuenta.java</file>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/contGeneral/libroDiario.java</file>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/otros/conexionBD.java</file>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/MateriaPrima/OpCierreMP.java</file>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/sic115/ingTransacciones.java</file>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/sic115/generarEstados.java</file>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/otros/TModeloAgregarTransaccion.java</file>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/documentadores/EstadoCapital.java</file>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/documentadores/BalanceGeneral.java</file>
-            <file>file:/C:/Users/dixon/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/MateriaPrima/kardexAux.java</file>
+            <file>file:/C:/Users/Hernandez/Documents/GitHub/proyecto-sic-subeCUM/sic-115/src/sic115/iniciar.java</file>
         </group>
     </open-files>
 </project-private>

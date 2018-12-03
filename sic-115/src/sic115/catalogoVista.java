@@ -482,12 +482,15 @@ op.recuperarMPanteriorAkardex(activo.getActivoActual().getFechainicio());
         int i = tablaCuentas.getSelectedRow();
         String nombre = tablaCuentas.getValueAt(i, 1).toString();
         String codigo = tablaCuentas.getValueAt(i, 0).toString();
-        String descripcion = tablaCuentas.getValueAt(i, 2).toString();
+        if(tablaCuentas.getValueAt(i,2).toString() != null){
+            String descripcion = tablaCuentas.getValueAt(i, 2).toString();
+            tdescripcion.setText(descripcion);
+        }else{
+            String descripcion = "";
+            tdescripcion.setText(descripcion);
+        }
         tcodigo.setText(codigo);
         tnombre.setText(nombre);
-        tdescripcion.setText(descripcion);
-
-
     }//GEN-LAST:event_tablaCuentasMouseClicked
 
     private void CuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CuentaActionPerformed
